@@ -1,7 +1,8 @@
 import { CIMI_Base, CIMI_CollectionInterface } from "./common.js";
-import { CIMI_Operation } from "./operations.js";
+import { CIMI_Operation, CIMI_Operations } from "./operations.js";
 import { ResourceId, URI } from "./types.js";
 import { ResourceRef, Ref, VolumeRef } from "./references.js";
+import { CIMI_MachineTemplate } from "./machine.js";
 
 
 // Base collection item interface following CIMI specification
@@ -127,6 +128,11 @@ export interface CIMI_MachineImageItem extends CIMI_CollectionItem {
     // No accessory attributes for snapshots - uses standard resourceRef
 }
 
+// Machine item (basic collection item)
+export interface CIMI_MachineItem extends CIMI_CollectionItem {
+    // No accessory attributes for machines - uses standard resourceRef
+}
+
 // Specific Collection classes per CIMI spec - each collection type has its own class
 
 // Basic Disk Collection (collection[Disk])
@@ -162,5 +168,25 @@ export abstract class CIMI_MeterCollection extends CIMI_Collection {
     getCollectionArrayName(): string {
         return "meters";
     }
+}
+
+// Machine Collection (collection[Machine])
+export abstract class CIMI_MachineCollection extends CIMI_Collection {
+    getCollectionArrayName(): string {
+        return "machines";
+    }
+    
+    getAvailableOperations(): CIMI_Operation[] {
+        return [
+            { rel: CIMI_Operations.ADD, href: `${this.id}/add` }
+        ];
+    }
+    
+    /**
+     * Create Machine and Add it to collection
+     * Note: The "add" operation requires that a MachineTemplate be used (see CIMI spec 4.2.1.1)
+     * @param machine MachineTemplate to create machine from
+     */
+    abstract add(machine: CIMI_MachineTemplate): void;
 }
 

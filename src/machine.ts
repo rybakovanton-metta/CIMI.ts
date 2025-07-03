@@ -2,9 +2,6 @@ import { CIMI_Resource } from "./interfaces/resource.js";
 import { ResourceId, URI } from "./interfaces/types.js";
 import { DiskCollectionRef, VolumeCollectionRef, NetworkInterfaceCollectionRef, MachineImageRef, MachineImageCollectionRef, MeterCollectionRef, EventLogRef, VolumeRef, CredentialRef } from "./interfaces/references.js";
 import { 
-    CIMI_Collection
-} from "./interfaces/collection.js";
-import { 
     CIMI_MachineInterface, 
     CIMI_MachineTemplate, 
     CIMI_MachineState, 
@@ -13,14 +10,6 @@ import {
 
 
 
-// It is abstract because each cloud management platform must implement it with it's own way.
-export abstract class CIMI_MachineCollection extends CIMI_Collection {
-    /**
-     * Create Machine and Add it to collection
-     * @param machine 
-     */
-    abstract add(machine: CIMI_MachineTemplate): void;
-}
 
 export abstract class CIMI_Machine extends CIMI_Resource implements CIMI_MachineInterface {
     // CIMI_MachineInterface properties - using specific collection classes per CIMI spec
