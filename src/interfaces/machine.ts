@@ -1,6 +1,6 @@
-import { Base64String } from "./types.js";
-import { CIMI_Resource } from "./resource.js";
-import { MachineImageRef, CredentialRef, VolumeRef, VolumeTemplateRef, AddressRef, NetworkRef, NetworkPortRef, MachineConfigurationRef, MeterTemplateRef, EventLogTemplateRef, DiskCollectionRef, VolumeCollectionRef, NetworkInterfaceCollectionRef, MachineImageCollectionRef, MeterCollectionRef, EventLogRef } from "./references.js";
+import type { Base64String } from "./types.js";
+import type { CIMI_Resource } from "./resource.js";
+import type { MachineImageRef, CredentialRef, VolumeRef, VolumeTemplateRef, AddressRef, NetworkRef, NetworkPortRef, MachineConfigurationRef, MeterTemplateRef, EventLogTemplateRef, DiskCollectionRef, VolumeCollectionRef, NetworkInterfaceCollectionRef, MachineImageCollectionRef, MeterCollectionRef, EventLogRef } from "./references.js";
 export enum CIMI_CpuArch {
     _68000 = '68000',
     Alpha = 'Alpha',

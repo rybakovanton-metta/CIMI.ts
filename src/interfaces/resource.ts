@@ -1,6 +1,7 @@
-import { URI, PropertiesMap } from "./types.js";
-import { ResourceRef, ResourceMetadataRef, createRef } from "./references.js";
-import { CIMI_Operation } from "./operations.js";
+import type { URI, PropertiesMap } from "./types.js";
+import type { ResourceRef, ResourceMetadataRef } from "./references.js";
+import { createRef } from "./references.js";
+import type { CIMI_Operation } from "./operations.js";
 import { CIMI_Base } from "./common.js";
 
 export abstract class CIMI_Resource extends CIMI_Base {

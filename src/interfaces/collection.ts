@@ -1,8 +1,10 @@
-import { CIMI_Base, CIMI_CollectionInterface } from "./common.js";
-import { CIMI_Operation, CIMI_Operations } from "./operations.js";
-import { ResourceId, URI } from "./types.js";
-import { ResourceRef, Ref, VolumeRef } from "./references.js";
-import { CIMI_MachineTemplate } from "./machine.js";
+import { CIMI_Base } from "./common.js";
+import type { CIMI_CollectionInterface } from "./common.js";
+import type { CIMI_Operation } from "./operations.js";
+import { CIMI_Operations } from "./operations.js";
+import type { ResourceId, URI } from "./types.js";
+import type { ResourceRef, Ref, VolumeRef } from "./references.js";
+import type { CIMI_MachineTemplate } from "./machine.js";
 
 
 // Base collection item interface following CIMI specification

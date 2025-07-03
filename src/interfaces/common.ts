@@ -1,6 +1,6 @@
-import { URI } from "./types.js";
-import { ResourceRef, Ref } from "./references.js";
-import { CIMI_Operation } from "./operations.js";
+import type { URI } from "./types.js";
+import type { ResourceRef, Ref } from "./references.js";
+import type { CIMI_Operation } from "./operations.js";
 
 // Base interface with common CIMI attributes - shared by all Resources and Collections
 export interface CIMI_CommonAttributes {

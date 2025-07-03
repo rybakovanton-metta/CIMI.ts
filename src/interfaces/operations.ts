@@ -1,4 +1,4 @@
-import { URI } from "./types.js";
+import type { URI } from "./types.js";
 
 // CIMI Operation structure per spec 5.8
 export interface CIMI_Operation {

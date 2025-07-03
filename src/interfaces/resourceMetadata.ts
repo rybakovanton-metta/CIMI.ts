@@ -1,8 +1,10 @@
-import { URI, ValueScope } from "./types.js";
+import type { URI, ValueScope } from "./types.js";
 import { CIMI_Resource } from "./resource.js";
-import { CIMI_Operation, CIMI_Operations } from "./operations.js";
-import { ResourceRef } from "./references.js";
-import { CIMI_Collection, CIMI_CollectionItem } from "./collection.js";
+import type { CIMI_Operation } from "./operations.js";
+import { CIMI_Operations } from "./operations.js";
+import type { ResourceRef } from "./references.js";
+import { CIMI_Collection } from "./collection.js";
+import type { CIMI_CollectionItem } from "./collection.js";
 
 export enum ResourceType {
   Address = 'Address',

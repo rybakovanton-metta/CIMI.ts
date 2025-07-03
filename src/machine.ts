@@ -1,7 +1,7 @@
 import { CIMI_Resource } from "./interfaces/resource.js";
-import { ResourceId, URI } from "./interfaces/types.js";
-import { DiskCollectionRef, VolumeCollectionRef, NetworkInterfaceCollectionRef, MachineImageRef, MachineImageCollectionRef, MeterCollectionRef, EventLogRef, VolumeRef, CredentialRef } from "./interfaces/references.js";
-import { 
+import type { ResourceId, URI } from "./interfaces/types.js";
+import type { DiskCollectionRef, VolumeCollectionRef, NetworkInterfaceCollectionRef, MachineImageRef, MachineImageCollectionRef, MeterCollectionRef, EventLogRef, VolumeRef, CredentialRef } from "./interfaces/references.js";
+import type { 
     CIMI_MachineInterface, 
     CIMI_MachineTemplate, 
     CIMI_MachineState, 

@@ -1,4 +1,4 @@
-import { URI } from "./types.js";
+import type { URI } from "./types.js";
 
 // CIMI Reference type per spec 5.5.6
 export interface Ref {
