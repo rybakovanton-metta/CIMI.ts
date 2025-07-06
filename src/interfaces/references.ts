@@ -23,11 +23,13 @@ export interface NetworkPortRef extends Ref {}
 export interface AddressRef extends Ref {}
 export interface EventLogRef extends Ref {}
 export interface SystemTemplateRef extends Ref {}
+export interface SystemServiceRef extends Ref {}
 
 // Collection reference types
 export interface ResourceMetadataCollectionRef extends Ref {}
 export interface SystemCollectionRef extends Ref {}
 export interface SystemTemplateCollectionRef extends Ref {}
+export interface SystemServiceCollectionRef extends Ref {}
 export interface MachineCollectionRef extends Ref {}
 export interface MachineTemplateCollectionRef extends Ref {}
 export interface MachineConfigurationCollectionRef extends Ref {}
