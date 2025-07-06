@@ -24,6 +24,7 @@ export interface AddressRef extends Ref {}
 export interface EventLogRef extends Ref {}
 export interface SystemTemplateRef extends Ref {}
 export interface SystemServiceRef extends Ref {}
+export interface SystemRef extends Ref {}
 
 // Collection reference types
 export interface ResourceMetadataCollectionRef extends Ref {}
